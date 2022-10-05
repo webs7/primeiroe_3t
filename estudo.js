@@ -14,4 +14,23 @@ function escreva(){
     document.write(tabuada + " x 10 = " + (tabuada*10)+"<br>");
 }
 
+function minhaTabuada(){
+    for(let i=1; i <=10;  i++) {
+        document.write("Tabuada do " + i + "<br>");
+                for(let j = 1; j <= 10; j++){
+            document.write(tabuada + " x "+ i + " = " + (tabuada*i) + "<br>");
+        }   
+        document.write("<br>");
+    }
+
+}
+ function quadrado(){
+     for(let i = 1; i < 10; i++){
+             document.write("O quadrado de " + i + "é" + (i*i) + "<br>")
+
+     }
+ }
+
+
+
 
