@@ -1,4 +1,4 @@
-let tabuada = 9;
+let tabuada = 5;
 
 function escreva(){
     document.write("tabuada do " + tabuada + "<br>");
@@ -31,6 +31,14 @@ function minhaTabuada(){
      }
  }
 
+  function calcula(){
+      let val = document.getElementById("valor").value;
+      let j = document.getElementById("juros").value;
+      let t = document.getElementById("meses").value;
+      
+      let res =val * (1+(j/100));
 
+      document.write("Resultado: "+res);
 
+  }
 
