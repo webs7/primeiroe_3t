@@ -1,7 +1,7 @@
-let tabuada = 5;
+let tabuada = 2;
 
 function escreva(){
-    document.write("tabuada do " + tabuada + "<br>");
+    document.write("Tabuada do " + tabuada + "<br>");
     document.write(tabuada + " x 1 = " + (tabuada*1)+"<br>");
     document.write(tabuada + " x 2 = " + (tabuada*2)+"<br>");
     document.write(tabuada + " x 3 = " + (tabuada*3)+"<br>");
@@ -12,33 +12,58 @@ function escreva(){
     document.write(tabuada + " x 8 = " + (tabuada*8)+"<br>");
     document.write(tabuada + " x 9 = " + (tabuada*9)+"<br>");
     document.write(tabuada + " x 10 = " + (tabuada*10)+"<br>");
+    
 }
 
-function minhaTabuada(){
-    for(let i=1; i <=10;  i++) {
+function minhaTabuada() {
+    for(let i=1; i <= 10; i++) {
         document.write("Tabuada do " + i + "<br>");
-                for(let j = 1; j <= 10; j++){
-            document.write(tabuada + " x "+ i + " = " + (tabuada*i) + "<br>");
-        }   
+        for(let j=1; j <= 10; j++){
+            document.write(i + " x " + j + " = " + (j*i)+"<br>");
+        }
         document.write("<br>");
     }
-
 }
- function quadrado(){
-     for(let i = 1; i < 10; i++){
-             document.write("O quadrado de " + i + "é" + (i*i) + "<br>")
 
-     }
- }
+function quadrado(){
+    for(let i = 1; i <= 10; i++){
+        document.write("O quadrado de " + i + " é " + (i*i) + "<br>");
+    }
+}
 
-  function calcula(){
-      let val = document.getElementById("valor").value;
-      let j = document.getElementById("juros").value;
-      let t = document.getElementById("meses").value;
-      
-      let res =val * (1+(j/100));
+function calcula(){
+    let val = document.getElementById("valor").value;
+    let j = document.getElementById("juros").value;
+    let t = document.getElementById("meses").value;
 
-      document.write("Resultado: "+res);
+    let res = val * (1+(j/100));
+    
+    document.write("Resultado: "+res);
+}
 
-  }
+function somarNotas(){
+    let n1 = document.getElementById("t1").value;
+    let n2 = document.getElementById("t2").value;
+    let n3 = document.getElementById("t3").value;
+    let r = Number(n1) + Number(n2) + Number(n3);
+    document.getElementById("resultadosoma").innerHTML = "Soma: " + r;
+}
+
+function mediaNotas(){
+    let n1 = document.getElementById("t1").value;
+    let n2 = document.getElementById("t2").value;
+    let n3 = document.getElementById("t3").value;
+    let r = Number(n1) + Number(n2) + Number(n3);
+    r = r / Number(3)
+    document.getElementById("resultadomedia").innerHTML = "Média: " + r;
+}
+
+function fecharNotas(){
+    let n1 = document.getElementById("t1").value;
+    let n2 = document.getElementById("t2").value;
+    let n3 = document.getElementById("t3").value;
+    let r = Number(n1) + Number(n2) + Number(n3);
+    r = 180 - r;
+    document.getElementById("resultadofechar").innerHTML = "Falta: " + r;
+}
 
