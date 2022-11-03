@@ -9,7 +9,8 @@ body {
     color: black;
     padding: 20px;
     border-radius: 30px;
-
+    text-align: center;
+    box-shadow: 10px 10px rgba(216, 201, 71, 0.808);
 }
 
 .calculadora input {
@@ -39,3 +40,12 @@ body {
     border-radius: 20px;
 }
 
+.spmes {
+    width: 100%;
+    background: rgb(243, 219, 0);
+    lighting-color: orange;
+    border-radius: 20px;
+    border-style: dashed;
+    border-color: orange;
+    border-width: 3px;
+} 
